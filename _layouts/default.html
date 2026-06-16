@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
-{{ content }}
+<header>
+    <div class="header-top">
+
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" alt="Barasala">
+            </a>
+        </div>
+
+        <div class="search">
+            <form action="/search/">
+                <input type="text" name="q" placeholder="Search names...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/names/">Names</a></li>
+            <li><a href="/nakshatra/">Nakshatra Names</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/consultation/">Consultation</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {{ content }}
+</main>
+
+<footer>
+    © {{ site.time | date: '%Y' }} Barasala
+</footer>
 
 </body>
 </html>
