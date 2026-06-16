@@ -7,42 +7,15 @@
 </head>
 <body>
 
-<header>
-    <div class="header-top">
+    {% include header.html %}
 
-        <div class="logo">
-            <a href="/">
-                <img src="/assets/images/logo.png" alt="Barasala">
-            </a>
-        </div>
+    {% include navbar.html %}
 
-        <div class="search">
-            <form action="/search/">
-                <input type="text" name="q" placeholder="Search names...">
-                <button type="submit">Search</button>
-            </form>
-        </div>
+    <main>
+        {{ content }}
+    </main>
 
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/names/">Names</a></li>
-            <li><a href="/nakshatra/">Nakshatra Names</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/consultation/">Consultation</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    {{ content }}
-</main>
-
-<footer>
-    © {{ site.time | date: '%Y' }} Barasala
-</footer>
+    {% include footer.html %}
 
 </body>
 </html>
