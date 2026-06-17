@@ -279,3 +279,7 @@ p {
 
     font-size: 1.1rem;
 }
+.card {
+    border: 3px solid blue;
+    min-height: 300px;
+}
