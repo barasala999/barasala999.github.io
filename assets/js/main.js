@@ -1,7 +1,7 @@
 window.showLetters = function () {
 
     const value = document.getElementById("nakshatraInput").value.trim().toLowerCase();
-console.log(value);
+
     const data = {
         rohini: ["O", "Va", "Vi", "Vu"],
         ashvini: ["Chu", "Che", "Cho", "La"],
@@ -10,10 +10,8 @@ console.log(value);
 
     const resultBox = document.getElementById("resultBox");
 
-    if (data[value]) {
-        resultBox.innerHTML =
-            "<b>Starting Letters:</b><br>" + data[value].join(", ");
-    } else {
-        resultBox.innerHTML = "Nakshatra not found.";
-    }
+    resultBox.innerHTML =
+        data[value]
+            ? "<b>Starting Letters:</b><br>" + data[value].join(", ")
+            : "Nakshatra not found.";
 };
