@@ -147,7 +147,9 @@ p {
     text-decoration: none;
     color: #555;
 }
-
+.copyright{
+	justify-content:center;
+}
 /* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
