@@ -3,24 +3,6 @@ layout: default
 title: Blog
 ---
 
-<h1>Latest Articles</h1>
+<h1>Blog</h1>
 
-<p>there is an update</p>
-
-{% assign articles = site.articles | sort: "date" | reverse %}
-
-{% for article in articles %}
-
-<div class="article-card">
-
-    <h2>
-        <a href="{{ article.url }}">
-            {{ article.title }}
-        </a>
-    </h2>
-
-    <p>{{ article.date | date: "%d %B %Y" }}</p>
-
-</div>
-
-{% endfor %}
+<p>Test page.</p>
