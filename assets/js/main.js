@@ -2,7 +2,7 @@ window.handleForm = function (event) {
     event.preventDefault(); // 🔴 THIS STOPS REFRESH
 
     const value = document.getElementById("nakshatraInput").value;
-		window.alert(value);
+	
     const data = {
         rohini: ["O", "Va", "Vi", "Vu"],
         ashvini: ["Chu", "Che", "Cho", "La"],
@@ -15,10 +15,8 @@ window.handleForm = function (event) {
         //document.getElementById("resultBox1").innerHTML = "";
 		resultBox.innerHTML=
             "<b>Starting Letters:</b><br>" + data[value].join(", ");
-    }else if(value==="select nakshatra"){
-		resultBox.innerHTML="Please select a Nakshatra";
-	}		
+    }		
 	else {
-        resultBox.innerHTML = "Nakshatra not found.";
+        resultBox.innerHTML = "Please select a Nakshatra";
     }
 };
