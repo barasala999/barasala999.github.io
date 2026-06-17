@@ -12,7 +12,7 @@ window.handleForm = function (event) {
     const resultBox = document.getElementById("resultBox");
 
     if (data[value]) {
-        
+        document.getElementById("resultBox1").innerHTML = "";
 		resultBox.innerHTML=
             "<b>Starting Letters:</b><br>" + data[value].join(", ");
     } else {
