@@ -1,0 +1,16 @@
+---
+layout: default
+title:  names
+---
+
+
+
+<h1>Latest Articles</h1>
+
+
+
+{% assign articles = site.names | sort: "date" | reverse %}
+
+{% for article in articles %}
+    {{ article.title }}
+{% endfor %}
