@@ -1,6 +1,10 @@
 title: Barasala
 
 collections:
-  articles:
+  blog:
     output: true
     permalink: /blog/:name/
+
+  names:
+    output: true
+    permalink: /names/:name/
