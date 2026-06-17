@@ -13,7 +13,14 @@ title:  baby name reveal video
         <form class="nk-form">
 
             <label>Enter Nakshatra</label>
-            <input type="text" id="nakshatraInput" placeholder="e.g. Rohini">
+            <select id="nakshatraInput">
+    <option value="">Select Nakshatra</option>
+    <option value="rohini">Rohini</option>
+    <option value="ashvini">Ashvini</option>
+    <option value="bharani">Bharani</option>
+</select>
+
+<button onclick="showLetters()">Get Suggestions</button>
 
             <!-- <button type="button" onclick="showLetters()">
                 Get Suggestions
