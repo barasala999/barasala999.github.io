@@ -1,7 +1,7 @@
 window.showLetters = function () {
 
     const value = document.getElementById("nakshatraInput").value.trim().toLowerCase();
-
+console.log(value);
     const data = {
         rohini: ["O", "Va", "Vi", "Vu"],
         ashvini: ["Chu", "Che", "Cho", "La"],
