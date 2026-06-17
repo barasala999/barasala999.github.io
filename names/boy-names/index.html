@@ -9,9 +9,3 @@ boy names</h1>
 <p>there is an update</p>
 
 <p>Your content here...</p>
-
-{% assign articles = site.names | where: "category", "boy-names" | sort: "date" | reverse %}
-
-{% for article in articles %}
-    {{ article.title }}
-{% endfor %}

@@ -5,4 +5,8 @@ title: Blog
 
 <h1>Blog</h1>
 
-<p>Test page.</p>
+<p>Total posts: {{ site.blog.size }}</p>
+
+{% for post in site.blog %}
+    <p>{{ post.title }}</p>
+{% endfor %}

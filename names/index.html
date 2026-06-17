@@ -9,8 +9,3 @@ title:  names
 
 <p>there is an update</p>
 
-{% assign articles = site.names | sort: "date" | reverse %}
-
-{% for article in articles %}
-    {{ article.title }}
-{% endfor %}
