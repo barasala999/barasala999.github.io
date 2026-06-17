@@ -1,6 +1,6 @@
-<script>
-function showLetters() {
-    const value = document.getElementById("nakshatraInput").value.trim();
+window.showLetters = function () {
+
+    const value = document.getElementById("nakshatraInput").value.trim().toLowerCase();
 
     const data = {
         rohini: ["O", "Va", "Vi", "Vu"],
@@ -10,14 +10,10 @@ function showLetters() {
 
     const resultBox = document.getElementById("resultBox");
 
-    const key = value.toLowerCase();
-
-    if (data[key]) {
+    if (data[value]) {
         resultBox.innerHTML =
-            "<b>Starting Letters:</b><br>" + data[key].join(", ");
+            "<b>Starting Letters:</b><br>" + data[value].join(", ");
     } else {
-        resultBox.innerHTML =
-            "Nakshatra not found. Try Rohini, Ashvini, Bharani.";
+        resultBox.innerHTML = "Nakshatra not found.";
     }
-}
-</script>
+};
