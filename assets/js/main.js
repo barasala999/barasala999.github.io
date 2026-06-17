@@ -15,7 +15,10 @@ window.handleForm = function (event) {
         //document.getElementById("resultBox1").innerHTML = "";
 		resultBox.innerHTML=
             "<b>Starting Letters:</b><br>" + data[value].join(", ");
-    } else {
+    }else if(value=="select nakshatra"){
+		resultBox.innerHTML="Please select a Nakshatra";
+	}		
+	else {
         resultBox.innerHTML = "Nakshatra not found.";
     }
 };
