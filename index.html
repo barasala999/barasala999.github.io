@@ -1,62 +1,100 @@
-<!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+---
+layout: default
+title:  baby name reveal video
+---
 
-.bgimg {
-  background-image: url('backgroundComingSoon.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+<div class="tools-grid">
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+    <!-- LEFT: Nakshatra Finder -->
+    <div class="card tool-card">
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+        <h2>Nakshatra Name Finder</h2>
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+        <form class="nk-form">
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
+            <label>Enter Nakshatra</label>
+            <input type="text" id="nakshatraInput" placeholder="e.g. Rohini">
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>3 days left</p>
-  </div>
-  <div class="bottomleft">
-    <p>Check Back Again</p>
-  </div>
+            <button type="button" onclick="showLetters()">
+                Get Suggestions
+            </button>
+
+        </form>
+
+        <div class="result-box" id="resultBox">
+            Enter a Nakshatra to see starting letters.
+        </div>
+
+        <div class="coming-soon">
+            🚧 Nakshatra Calculator (DOB based) – Coming Soon!
+        </div>
+
+    </div>
+
+
+    <!-- MIDDLE: Trending Names -->
+    <div class="card tool-card">
+
+        <h2>Trending Names</h2>
+
+        <table class="trend-table">
+            <tr><th>Name</th><th>Meaning</th></tr>
+            <tr><td>Aarav</td><td>Peaceful</td></tr>
+            <tr><td>Vihaan</td><td>Morning</td></tr>
+            <tr><td>Myra</td><td>Beloved</td></tr>
+            <tr><td>Ishaan</td><td>Sun / Lord Shiva</td></tr>
+            <tr><td>Anaya</td><td>Care</td></tr>
+        </table>
+
+    </div>
+
+
+    <!-- RIGHT: Consultation Plans -->
+    <div class="card tool-card">
+
+        <h2>Consultation Plans</h2>
+
+        <div class="plan">
+
+            <h3>Starter</h3>
+            <p>₹499 - Name List</p>
+
+            <a class="wa-btn"
+               href="https://wa.me/919876543210?text=Hello%20Barasala,%0AI%20am%20interested%20in%20Starter%20Plan"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+
+        <div class="plan featured">
+
+            <h3>Personalized</h3>
+            <p>₹1999 - Custom Names</p>
+
+            <a class="wa-btn"
+               href="https://wa.me/919876543210?text=Hello%20Barasala,%0AI%20am%20interested%20in%20Personalized%20Naming%20Consultation%20₹1999"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+
+        <div class="plan">
+
+            <h3>Vedic Premium</h3>
+            <p>₹4999 - Nakshatra Based</p>
+
+            <a class="wa-btn"
+               href="https://wa.me/919876543210?text=Hello%20Barasala,%0AI%20am%20interested%20in%20Premium%20Vedic%20Consultation"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
-
-</body>
-</html>

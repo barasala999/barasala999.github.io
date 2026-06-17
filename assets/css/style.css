@@ -370,3 +370,86 @@ p {
 
     border: 1px solid #333;
 }
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.tool-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nk-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nk-form button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-box {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.coming-soon {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Trending table */
+.trend-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trend-table th,
+.trend-table td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Plans */
+.plan {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.featured {
+    border: 2px solid #333;
+}
+
+.wa-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
