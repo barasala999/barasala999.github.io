@@ -7,3 +7,9 @@ title: boy names
 boy names</h1>
 
 <p>Your content here...</p>
+
+{% assign articles = site.names | where: "category", "boy-names" | sort: "date" | reverse %}
+
+{% for article in articles %}
+    {{ article.title }}
+{% endfor %}
