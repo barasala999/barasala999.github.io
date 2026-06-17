@@ -10,24 +10,21 @@ title:  baby name reveal video
 
         <h2>Nakshatra Name Finder</h2>
 
-        <form class="nk-form">
+        
+		<form onsubmit="handleForm(event)" class="nk-form">
 
-            <label>Enter Nakshatra</label>
-            <select id="nakshatraInput">
-    <option value="">Select Nakshatra</option>
-    <option value="rohini">Rohini</option>
-    <option value="ashvini">Ashvini</option>
-    <option value="bharani">Bharani</option>
-</select>
+    <select id="nakshatraInput">
+        <option value="">Select Nakshatra</option>
+        <option value="rohini">Rohini</option>
+        <option value="ashvini">Ashvini</option>
+        <option value="bharani">Bharani</option>
+    </select>
 
-<button onclick="showLetters()">Get Suggestions</button>
+    <button type="submit">Get Suggestions</button>
 
-            <!-- <button type="button" onclick="showLetters()">
-                Get Suggestions
-            </button> -->
-			
+</form>
 
-        </form>
+<div id="resultBox"></div>
 
         <div class="result-box" id="resultBox">
             Enter a Nakshatra to see starting letters.
@@ -65,11 +62,12 @@ title:  baby name reveal video
         <div class="plan">
 
             <h3>Starter</h3>
-            <p>₹499 - Name List <a href="https://wa.me/919392823138?text=Hello%20Barasala,%0A%0AI%20am%20interested%20in:%0A%0APlan:%20Premium%20Vedic%20Naming%20Consultation%0APrice:%20%E2%82%B94999%0A%0APlease%20share%20the%20next%20steps."
+            <p>₹499 - Name List </p>
+			<a href="https://wa.me/919392823138?text=Hello%20Barasala,%0A%0AI%20am%20interested%20in:%0A%0APlan:%20Premium%20Vedic%20Naming%20Consultation%0APrice:%20%E2%82%B94999%0A%0APlease%20share%20the%20next%20steps."
 target="_blank"
 class="wa-btn"
 > Chat with us <i class="fa-brands fa-whatsapp"></i>
-</a></p>
+</a>
 
             
 
