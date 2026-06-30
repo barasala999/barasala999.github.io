@@ -1,9 +1,14 @@
 ---
 layout: default
-title: Girl names
+title: Girl Names
 ---
 
-<h1>
-Girl names</h1>
+<h1>Girl Names</h1>
 
-<p>Your content here...</p>
+{% assign articles = site.names | where_exp: "item", "item.path contains 'girl-names/'" | sort: "date" | reverse %}
+
+{% for article in articles %}
+  <h2>
+    <a href="{{ article.url }}">{{ article.title }}</a>
+  </h2>
+{% endfor %}
