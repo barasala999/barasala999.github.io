@@ -1,5 +1,9 @@
 title: Barasala
 collections:
+  blog:
+    output: true
+    permalink: /blog/:path/
+
   names:
     output: true
     permalink: /names/:path/
