@@ -539,3 +539,38 @@ body {
         transparent 0);
     background-size: 24px 24px;
 }
+.main-nav{
+
+    background:#ffffff;
+
+    border-top:1px solid #EFE7DA;
+
+    border-bottom:1px solid #EFE7DA;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+.main-nav a{
+
+    color:#4E342E;
+
+    padding:16px 18px;
+
+    border-radius:8px;
+
+    transition:.2s;
+}
+
+.main-nav a:hover{
+
+    background:#F3ECE3;
+
+    color:#8B5E3C;
+}
+.main-nav a.active{
+
+    background:#8B5E3C;
+
+    color:white;
+
+    border-radius:8px;
+}
