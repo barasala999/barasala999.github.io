@@ -1,9 +1,17 @@
 ---
 layout: default
-title: How I named My Baby
+title: How I named my baby
 ---
 
-<h1>
-How I named My Baby</h1>
+<h1>Boy Names</h1>
 
-<p>Your content here...</p>
+{% assign articles = site.names
+    | where: "category", "how-I-named-my-baby"
+    | sort: "date"
+    | reverse %}
+
+{% for article in articles %}
+  <h2>
+    <a href="{{ article.url }}">{{ article.title }}</a>
+  </h2>
+{% endfor %}
