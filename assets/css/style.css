@@ -508,4 +508,34 @@ p {
 }
 body {
     background: #FAF8F3;
+    color: #2C2C2C;
+}
+
+.article-card,
+.tool-card,
+.plan-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E2D8;
+}
+
+h1,
+h2,
+h3 {
+    color: #3E2F1C;
+}
+
+a {
+    color: #8B5E3C;
+}
+
+a:hover {
+    color: #6F482C;
+}
+body {
+    background-color: #FAF8F3;
+    background-image:
+        radial-gradient(circle at 1px 1px,
+        rgba(0,0,0,0.03) 1px,
+        transparent 0);
+    background-size: 24px 24px;
 }
