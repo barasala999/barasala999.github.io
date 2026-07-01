@@ -1,0 +1,17 @@
+---
+layout: default
+title: Sanskrit Names
+---
+
+<h1>Sanskrit Names</h1>
+
+{% assign articles = site.names
+    | where: "category", "sanskrit-names"
+    | sort: "date"
+    | reverse %}
+
+{% for article in articles %}
+  <h2>
+    <a href="{{ article.url }}">{{ article.title }}</a>
+  </h2>
+{% endfor %}
