@@ -33,7 +33,10 @@ Mythology Names</h1>
 </div>
 <h1>Mythology Names</h1>
 
-{% assign articles = site.names | where_exp: "item", "item.path contains 'mythology-names/'" | sort: "date" | reverse %}
+{% assign articles = site.names
+    | where: "category", "mythology-names"
+    | sort: "date"
+    | reverse %}
 
 {% for article in articles %}
   <h2>
