@@ -1,11 +1,38 @@
 ---
 layout: default
-title:  names
+title: Baby Names
 ---
 
+<h1>Latest Baby Name Articles</h1>
 
+<div class="article-grid">
 
-<h1>Latest Articles</h1>
+{% assign articles = site.names | sort: "date" | reverse %}
 
-<p>there is an update</p>
+{% for article in articles %}
 
+<div class="article-card">
+
+    {% if article.image %}
+    <img src="{{ article.image }}" alt="{{ article.title }}">
+    {% endif %}
+
+    <h2>
+        <a href="{{ article.url }}">
+            {{ article.title }}
+        </a>
+    </h2>
+
+    <p>
+        {{ article.excerpt }}
+    </p>
+
+    <a class="read-more" href="{{ article.url }}">
+        Read More →
+    </a>
+
+</div>
+
+{% endfor %}
+
+</div>

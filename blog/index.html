@@ -3,10 +3,36 @@ layout: default
 title: Blog
 ---
 
-<h1>Blog</h1>
+<h1>Latest Blog Articles</h1>
 
-<p>Total posts: {{ site.blog.size }}</p>
+<div class="article-grid">
 
-{% for post in site.blog %}
-    <p>{{ post.title }}</p>
+{% assign posts = site.blog | sort: "date" | reverse %}
+
+{% for post in posts %}
+
+<div class="article-card">
+
+    {% if post.image %}
+    <img src="{{ post.image }}" alt="{{ post.title }}">
+    {% endif %}
+
+    <h2>
+        <a href="{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h2>
+
+    <p>
+        {{ post.excerpt }}
+    </p>
+
+    <a class="read-more" href="{{ post.url }}">
+        Read More →
+    </a>
+
+</div>
+
 {% endfor %}
+
+</div>
